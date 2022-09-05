@@ -1,0 +1,132 @@
+* {
+    --black: rgb(0, 0, 0);
+    outline-style: none;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: var(--white);
+    width: 550px;
+    height: fit-content;
+    padding: 3rem;
+    color: var(--black);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.titulo > h1 {
+    font-size: 3rem;
+}
+
+.titulo::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3rem;
+    height: 4px;
+    background-color: var(--background);
+    background-image: linear-gradient(45deg, var(--background), var(--background-light));
+    border-radius: 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.input {
+    padding: 12px 0 12px 1.5rem; 
+    border: none;
+    border-bottom: solid 1px var(--black);
+}
+
+.inputs:hover{
+    filter: brightness(1.2);
+}
+
+.icons-left {
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+
+.icons-right {
+    position: absolute;
+    right: 6px;
+    top: 12px;
+}
+
+.i-right {
+    right: 0;
+}
+
+.closed {
+    position: absolute;
+    right: 6px;
+}
+
+.eye {
+    position: absolute;
+    right: 0px;
+}
+
+.forgot {
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--background);
+    text-decoration-line: underline;
+    margin-top: 1rem;
+}
+
+.forgot:hover{  
+    filter: brightness(1.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.button:hover {
+    filter: brightness(1.2);
+}
+
+.button {
+    background-color: var(--background);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
